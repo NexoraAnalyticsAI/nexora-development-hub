@@ -1,0 +1,17 @@
+name: Nexora CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check repository
+        run: echo "Nexora Analytics AI workflow is running successfully!"
